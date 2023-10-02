@@ -13,6 +13,7 @@ div {
 p {
 	margin-top: 2rem;
 	padding: 1rem;
+	font-weight: 500;
 }
 .container {
 	margin-top: 3rem;
@@ -83,4 +84,56 @@ p {
 	padding: 5px 10px 5px 10px;
 	font-weight: bold;
 	background-color: rgb(229, 209, 152);
+}
+@media screen and (max-width: 992px) {
+	.container {
+		display: block;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	.sushi {
+		display: block;
+		background-color: rgba(153, 145, 145, 0.774);
+		width: 100%;
+		margin-top: 2%;
+	}
+	.chicken {
+		width: 49%;
+		box-sizing: border-box;
+	}
+	.beef {
+		float: right;
+		width: 49%;
+		box-sizing: border-box;
+		margin: 0px;
+	}
+}
+/* for mobile and tablet screen */
+@media screen and (max-width: 767px) {
+	.container {
+		display: block;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	.sushi {
+		display: block;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.chicken {
+		display: block;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.beef {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 2%;
+	}
 }
